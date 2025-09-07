@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Home Page</title>
+    <meta name="description" content="This is responsive home page.">
+    <meta name="author" content="Samuel Amorim Maciel">
 
+    <!--fonts api google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
+
+    <!--external files-->
+    <link rel="stylesheet" href="styles/smaller.css">
+    <link rel="stylesheet" href="styles/largest.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="images/house-door-fill.svg" alt="Home Logo">
+            <span>Samuel Maciel</span>
+            <button id="ham-btn" class="hamburguer"></button>
+        </div>
+        <nav id="menu" class="menu">
+            <a href="" class="current">Home</a>
+            <a href="">Chamber</a>
+            <a href="">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+
+        <section>
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam est doloremque ratione recusandae dolores similique vel ducimus ea voluptas consequuntur deserunt iste, esse totam asperiores voluptatibus at vitae dolorum quasi eaque libero ab omnis? Perferendis laborum repudiandae libero officiis? Vel architecto, molestias, et iusto reprehenderit rerum suscipit corporis sed sint exercitationem necessitatibus culpa doloremque consequuntur quidem, qui explicabo sequi eaque.</p>
+        </section>
+        
+        <section>
+            <h2>Student Photo</h2>
+            <div class="image-container"><img src="images/profile.jpg" alt="Student Photo"></div>
+        </section>
+
+        <section>
+            <h2>Web Certificate Courses</h2>
+            <div class="courses-container">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+            <div id="courses"></div>
+        </section>
+    </main>
+
+    <footer>
+        <a href=""><img src="" alt=""></a>
+        <a href=""><img src="" alt=""></a>
+        <a href=""><img src="" alt=""></a>
+
+        <p>&copy;<span id="currentyear"></span> Samuel Maciel Brazil</p>
+        
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

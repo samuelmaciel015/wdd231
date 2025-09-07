@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Lato", sans-serif;
+}
+/*HEADER*/
+.header-container{
+    display: grid;
+    grid-template-columns: 44px auto 44px;
+    align-items: end;
+}
+header span{
+    font-size: 20px;
+}
+nav{
+    width: 100%;
+}
+.menu{
+    display: none;
+}
+.menu.show{
+    display: block;
+}
+nav a{
+    display: block;
+    background-color: rgb(44, 43, 43);
+    border: 1px solid black;
+    height: 50px;
+    padding: 13px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.current{
+    background-color: rgb(83, 82, 82);
+}
+
+/*HAMBURGUER*/
+.hamburguer {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.hamburguer::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburguer.show::before {
+    content: "\00D7";
+    font-size: 2.3rem;
+}
+
+/*MAIN*/
+main{
+    padding: 1rem;
+}
+section{
+    margin-top: 1rem;
+}
+section h2{
+    background-color: rgb(44, 43, 43);
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    align-content: center;
+    height: 35px;
+}
+section p, .image-container{
+    background-color: rgb(199, 196, 196);
+    padding: 10px;
+    text-align: justify;
+}
+section img{
+    width: 100%;
+}
+.courses-container{
+    text-align: center;
+}
+section span{
+    background-color: rgb(199, 196, 196);
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.courses-container{
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+.courses-container button{
+    background-color: rgb(199, 196, 196);
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 7px;
+    font-weight: bold;
+    height: 25px;
+}
+section h3{
+    width: 100%;
+    border: 1px solid black;
+    text-align: center;
+    background-color: rgb(199, 196, 196);
+    margin: 5px;
+}
