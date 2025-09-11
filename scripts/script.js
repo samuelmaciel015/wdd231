@@ -90,30 +90,44 @@ const courses = [
 const btnAll = document.getElementById("all");
 const btnCse = document.getElementById("cse");
 const btnWdd = document.getElementById("wdd");
+const credits = document.getElementById("credits");
 
 btnAll.addEventListener('click', () => {
+    credits.innerHTML = 'The total credits for course listed above is 12';
     createCourses(courses);
 })
 
 btnCse.addEventListener('click', () => {
-    createCourses(courses.filter(course => course.subject = 'CSE'));
+    credits.innerHTML = 'The total credits for course listed above is 6';
+    createCourses(courses.filter(course => course.subject == 'CSE'));
 })
 
 btnWdd.addEventListener('click', () => {
-    createCourses(courses.filter(course => course.subject = 'WDD'));
+    credits.innerHTML = 'The total credits for course listed above is 6';
+    createCourses(courses.filter(course => course.subject == 'WDD'));
 })
 
 function createCourses(filteredCourses) {
     const divCourses = document.getElementById("courses");
     divCourses.innerHTML = "";
-    filteredCourses.forEach(course => {
+    filteredCourses.forEach((course) => {
         const h3 = document.createElement('h3');
 
-        var content = document.createTextNode(course.subject);
-        var number = document.createTextNode(course.number);
-        h3.appendChild(content);
-        h3.appendChild(number);
+        if (course.completed == true) {
+            h3.style.backgroundColor = 'rgba(135, 222, 126, 1)';
+            h3.innerHTML = `${course.subject} ${course.number} (Completed)`
+        } else {
+            h3.style.backgroundColor = 'rgb(199, 196, 196)'; 
+            h3.innerHTML = `${course.subject} ${course.number}`
+        }
 
         divCourses.appendChild(h3);
     });
 }
+
+const year = document.getElementById("currentyear");
+const today = new Date();
+year.innerHTML = today.getFullYear();
+
+const modified = document.getElementById("lastModified");
+modified.innerHTML = `Last Modified: ${document.lastModified}`;

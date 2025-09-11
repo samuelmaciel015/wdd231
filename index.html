@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Course Home Page</title>
-    <meta name="description" content="This is responsive home page.">
+    <meta name="description" content="This is a responsive and dynamic home page.">
     <meta name="author" content="Samuel Amorim Maciel">
 
     <!--fonts api google-->
@@ -15,14 +15,21 @@
     <!--external files-->
     <link rel="stylesheet" href="styles/smaller.css">
     <link rel="stylesheet" href="styles/largest.css">
+    <link rel="icon" href="images/favicon.ico">
     <script src="scripts/script.js" defer></script>
+
+    <!--social media tags-->
+    <meta property="og:title" content="Course Home Page">
+    <meta property="og:description" content="This is a responsive and dynamic home page.">
+    <meta property="og:image" content="file:///C:/Users/Leonardo%20Maciel/Desktop/BYU/wdd231/images/house-door-fill.svg">
+    <meta property="og:url" content="http://127.0.0.1:5500/index.html">
 </head>
 <body>
     <header>
         <div class="header-container">
-            <img src="images/house-door-fill.svg" alt="Home Logo">
+            <img src="images/house-door-fill.svg" alt="Home Logo" loading="lazy">
             <span>Samuel Maciel</span>
-            <button id="ham-btn" class="hamburguer"></button>
+            <button id="ham-btn" class="hamburguer" name="Menu"></button>
         </div>
         <nav id="menu" class="menu">
             <a href="" class="current">Home</a>
@@ -34,17 +41,17 @@
     <main>
         <h1>Home</h1>
 
-        <section>
+        <section class="about">
             <h2>About Me</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam est doloremque ratione recusandae dolores similique vel ducimus ea voluptas consequuntur deserunt iste, esse totam asperiores voluptatibus at vitae dolorum quasi eaque libero ab omnis? Perferendis laborum repudiandae libero officiis? Vel architecto, molestias, et iusto reprehenderit rerum suscipit corporis sed sint exercitationem necessitatibus culpa doloremque consequuntur quidem, qui explicabo sequi eaque.</p>
         </section>
         
-        <section>
+        <section class="photo">
             <h2>Student Photo</h2>
-            <div class="image-container"><img src="images/profile.jpg" alt="Student Photo"></div>
+            <div class="image-container"><img src="images/profile.jpg" alt="Student Photo" loading="lazy"></div>
         </section>
 
-        <section>
+        <section class="course">
             <h2>Web Certificate Courses</h2>
             <div class="courses-container">
                 <button id="all">All</button>
@@ -52,13 +59,16 @@
                 <button id="wdd">WDD</button>
             </div>
             <div id="courses"></div>
+            <p id="credits"></p>
         </section>
     </main>
 
     <footer>
-        <a href=""><img src="" alt=""></a>
-        <a href=""><img src="" alt=""></a>
-        <a href=""><img src="" alt=""></a>
+        <div class="social">
+            <a href="" target="_blank"><img src="images/linkedin.svg" alt="linkedin"></a>
+            <a href="" target="_blank"><img src="images/github.svg" alt="github"></a>
+            <a href="https://x.com/?lang=pt" target="_blank"><img src="images/twitter-x.svg" alt="twitter-x"></a>
+        </div>
 
         <p>&copy;<span id="currentyear"></span> Samuel Maciel Brazil</p>
         

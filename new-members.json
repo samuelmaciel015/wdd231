@@ -1,0 +1,22 @@
+{
+    "family name": "Maciel",
+    "moving date": "2025-06-28",
+    "visited by bishop": false,
+    "individual info": [
+        {
+            "member name": "Samuel",
+            "gender": "Male",
+            "birthdate": "2004-03-15"
+        },
+        {
+            "member name": "Rebeca",
+            "gender": "Female",
+            "birthdate": "2005-05-31"
+        },
+        {
+            "member name": "Leonardo",
+            "gender": "Male",
+            "birthdate": "1981-12-01"
+        }        
+    ]
+}

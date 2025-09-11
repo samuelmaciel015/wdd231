@@ -71,7 +71,7 @@ section h2{
     align-content: center;
     height: 35px;
 }
-section p, .image-container{
+.about p, .image-container{
     background-color: rgb(199, 196, 196);
     padding: 10px;
     text-align: justify;
@@ -104,6 +104,25 @@ section h3{
     width: 100%;
     border: 1px solid black;
     text-align: center;
-    background-color: rgb(199, 196, 196);
     margin: 5px;
+}
+button{
+    cursor: pointer;
+}
+#credits{
+    text-align: center;
+}
+
+/*FOOTER*/
+footer{
+    text-align: center;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-bottom: .25rem;
+}
+footer p{
+    background-color: rgb(199, 196, 196);
 }
