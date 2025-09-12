@@ -1,8 +1,14 @@
 @media only screen and (min-width:38rem){
+    body{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
     .menu {
         display: flex;
         width: 100%;
         background-color: rgb(44, 43, 43);
+        margin-top: 10px;
     }
     nav a{
         background-color: rgb(44, 43, 43);
@@ -22,6 +28,8 @@
         grid-template-columns: repeat(3, 1fr);
         column-gap: 1rem;
         row-gap: 1rem;
+        height: 90%;
+        flex-grow: 1;
     }
     main h1{
         grid-column: 1 / span 3;
@@ -32,7 +40,8 @@
     main .course{
         grid-column: 1 / span 3;
     }
-    .about p, .photo div{
+    .about p, .image-container{
         height: 91%;
     }
+    /*FOOTER*/
 }
