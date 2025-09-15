@@ -11,52 +11,53 @@ modified.innerHTML = `Last Modified: ${document.lastModified}`;
 async function getData() {
     const response = await fetch('https://samuelmaciel015.github.io/wdd231/chamber/data/members.json');
     const data = await response.json();
-    console.log(data.business);
+    displayCards(data.businesses);
 }
 
 //create business cards
-function createCards(businessName, imageName, phoneNumber, address, url) {
-    const section = document.querySelector(".business-card");
+const displayCards = (businesses) => {
+    businesses.forEach(business => {
+        const section = document.querySelector(".business-card");
 
-    //card grid
-    const card = document.createElement("div");
-    card.classList.add("card-grid");
+        //card grid
+        const card = document.createElement("div");
+        card.classList.add("card-grid");
 
-    //h2
-    const h2 = document.createElement('h2');
-    h2.textContent = businessName;
+        //h2
+        const h2 = document.createElement('h2');
+        h2.textContent = business.names;
+        //image
+        const image = document.createElement('img');
+        image.setAttribute("src", business.imageName);
+        image.setAttribute("alt", business.names);
+        image.setAttribute("loading", 'lazy');
 
-    //image
-    const image = document.createElement('img');
-    image.setAttribute("src", imageName);
-    image.setAttribute("alt", businessName);
-    image.setAttribute("loading", 'lazy');
+        //div with info
+        const info = document.createElement('div');
 
-    //div with info
-    const info = document.createElement('div');
+        //p with phone
+        const phone = document.createElement('p');
+        phone.textContent = `Phone: ${business.phoneNumbers}`;
 
-    //p with phone
-    const phone = document.createElement('p');
-    phone.textContent = `Phone: ${phoneNumber}`;
+        //p with address
+        const addresses = document.createElement('p');
+        addresses.textContent = `Address: ${business.addresses}`;
 
-    //p with address
-    const addresses = document.createElement('p');
-    addresses.textContent = `Address: ${address}`;
+        //p with url
+        const link = document.createElement('p');
+        link.textContent = `URL: ${business.websiteURLs}`;
 
-    //p with url
-    const link = document.createElement('p');
-    link.textContent = `URL: ${url}`;
+        //appending
+        //info.appendChild(phone);
+        //info.appendChild(addresses);
+        //info.appendChild(link);
 
-    //appending
-    info.appendChild(phone);
-    info.appendChild(addresses);
-    info.appendChild(link);
+        card.appendChild(h2);
+        //card.appendChild(image);
+        //card.appendChild(info);
 
-    card.appendChild(h2);
-    card.appendChild(image);
-    card.appendChild(info);
-
-    section.appendChild(card);
+        section.appendChild(card);
+    });
 }
 
 getData();

@@ -1,5 +1,5 @@
 {
-    "business": [
+    "businesses": [
         {
             "names": ["NovaByte Solutions",
             "Evergreen & Co. Interiors",
@@ -17,7 +17,7 @@
             "2490 Camellia Terrace, Bellewood, CA 90210",
             "8110 Quantum Loop, Silicon Harbor, Austin, TX 78759"],
 
-            "phone numbers": ["(206) 555-7320",
+            "phoneNumbers": ["(206) 555-7320",
             "(503) 555-2817",
             "(480) 555-6463",
             "(843) 555-1930",
@@ -25,7 +25,7 @@
             "(310) 555-4569",
             "(512) 555-9932"],
 
-            "website URLs": ["www.novabyte.org",
+            "websiteURLs": ["www.novabyte.org",
             "www.evergreen.org",
             "www.lumenix.org",
             "www.frostandfinch.org",
@@ -33,7 +33,7 @@
             "www.veridianbloom.org",
             "www.ciphernest.org"],
 
-            "imaage name": ["novabyte.jpg",
+            "imageName": ["novabyte.jpg",
             "evergreen.jpg",
             "lumenix.jpg",
             "frostandfinch.jpg",
