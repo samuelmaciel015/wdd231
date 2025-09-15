@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body{
+    font-family: "Lato", sans-serif;
+}
+
+/*HEADER*/
+header{
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+header span{
+    font-size: 24px;
+    align-self: end;
+}
+/*NAV*/
+.hamburguer{
+    width: 44px;
+    text-align: center;
+}
+.hamburguer a{
+    display: none;
+}
+.hamburguer::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburguer.show::before {
+    content: "\00D7";
+    font-size: 2.3rem;
+}
+
+/*MAIN*/
+/*HERO*/
+.hero{
+    height: 230px;
+    background-image: url(../images/timbuktu.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 1% 0;
+}
+/*EVENTS*/
+main h2:nth-child(2){
+    font-size: 28px;
+    margin: 0 2%;
+}
+.events,
+.current-weather,
+.weather-forecast {
+    background-color: rgb(199, 196, 196);
+    margin: 2%;
+    min-height: 150px;
+}
+.events h2,
+.current-weather h2,
+.weather-forecast h2{
+    background-color: rgb(44, 43, 43);
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    align-content: center;
+    height: 35px;
+}
+
+/*WEATHER CURRENT*/
+.weather-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2%;
+}
+.weather-grid img{
+    justify-self: center;
+}
+
+/*WEATHER FORECAST*/
+.weather-flex{
+    padding: 2%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*FOOTER*/
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(199, 196, 196);
+    padding: 2%;
+}
+footer div:nth-child(2){
+    display: flex;
+    justify-content: center;
+}
+footer a{
+    margin: 5%;
+}
