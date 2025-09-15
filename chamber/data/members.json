@@ -1,47 +1,60 @@
 {
     "businesses": [
         {
-            "names": ["NovaByte Solutions",
-            "Evergreen & Co. Interiors",
-            "Lumenix Solar Corp",
-            "Frost & Finch Artisan Bakery",
-            "IronPeak Logistics",
-            "Veridian Bloom Skincare",
-            "CipherNest Cybersecurity"],
-
-            "addresses": ["4481 Orion Avenue, Techridge District, Seattle, WA 98101",
-            "905 Laurel Lane, Redwood Heights, Portland, OR 97210",
-            "1125 Horizon Park Drive, Sunvale, AZ 85004",
-            "143 Wren Street, Old Market District, Charleston, SC 29401",
-            "6700 Freightline Blvd, Crosspoint Industrial Park, Chicago, IL 60632",
-            "2490 Camellia Terrace, Bellewood, CA 90210",
-            "8110 Quantum Loop, Silicon Harbor, Austin, TX 78759"],
-
-            "phoneNumbers": ["(206) 555-7320",
-            "(503) 555-2817",
-            "(480) 555-6463",
-            "(843) 555-1930",
-            "(312) 555-8821",
-            "(310) 555-4569",
-            "(512) 555-9932"],
-
-            "websiteURLs": ["www.novabyte.org",
-            "www.evergreen.org",
-            "www.lumenix.org",
-            "www.frostandfinch.org",
-            "www.ironpeak.org",
-            "www.veridianbloom.org",
-            "www.ciphernest.org"],
-
-            "imageName": ["novabyte.jpg",
-            "evergreen.jpg",
-            "lumenix.jpg",
-            "frostandfinch.jpg",
-            "ironpeak.jpg",
-            "veridian.jpg",
-            "ciphernest.jpg"],
-
-            "membership": [1, 1, 2, 2, 2, 3, 3]
+            "names": "NovaByte Solutions",
+            "addresses": "4481 Orion Avenue, Techridge District, Seattle, WA 98101",
+            "phoneNumbers": "(206) 555-7320",
+            "websiteURLs": "www.novabyte.org",
+            "imageName": "novabyte.jpg",
+            "membership": 1
+        },
+        {
+            "names": "Evergreen & Co. Interiors",
+            "addresses": "905 Laurel Lane, Redwood Heights, Portland, OR 97210",
+            "phoneNumbers": "(503) 555-2817",
+            "websiteURLs": "www.evergreen.org",
+            "imageName": "evergreen.jpg",
+            "membership": 1
+        },
+        {
+            "names": "Lumenix Solar Corp",
+            "addresses": "1125 Horizon Park Drive, Sunvale, AZ 85004",
+            "phoneNumbers": "(480) 555-6463",
+            "websiteURLs": "www.lumenix.org",
+            "imageName": "lumenix.jpg",
+            "membership": 2
+        },
+        {
+            "names": "Frost & Finch Artisan Bakery",
+            "addresses": "143 Wren Street, Old Market District, Charleston, SC 29401",
+            "phoneNumbers": "(843) 555-1930",
+            "websiteURLs": "www.frostandfinch.org",
+            "imageName": "frostandfinch.jpg",
+            "membership": 2
+        },
+        {
+            "names": "IronPeak Logistics",
+            "addresses": "6700 Freightline Blvd, Crosspoint Industrial Park, Chicago, IL 60632",
+            "phoneNumbers": "(312) 555-8821",
+            "websiteURLs": "www.ironpeak.org",
+            "imageName": "ironpeak.jpg",
+            "membership": 2
+        },
+        {
+            "names": "Veridian Bloom Skincare",
+            "addresses": "2490 Camellia Terrace, Bellewood, CA 90210",
+            "phoneNumbers": "(310) 555-4569",
+            "websiteURLs": "www.veridianbloom.org",
+            "imageName": "veridian.jpg",
+            "membership": 3
+        },
+        {
+            "names": "CipherNest Cybersecurity",
+            "addresses": "8110 Quantum Loop, Silicon Harbor, Austin, TX 78759",
+            "phoneNumbers": "(512) 555-9932",
+            "websiteURLs": "www.ciphernest.org",
+            "imageName": "ciphernest.jpg",
+            "membership": 3
         }
     ]
 }

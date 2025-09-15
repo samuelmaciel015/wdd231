@@ -14,9 +14,11 @@ async function getData() {
     displayCards(data.businesses);
 }
 
+getData();
+
 //create business cards
 const displayCards = (businesses) => {
-    businesses.forEach(business => {
+    businesses.forEach((business) => {
         const section = document.querySelector(".business-card");
 
         //card grid
@@ -59,5 +61,3 @@ const displayCards = (businesses) => {
         section.appendChild(card);
     });
 }
-
-getData();
