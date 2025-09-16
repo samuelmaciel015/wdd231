@@ -23,15 +23,17 @@
     
     <!--external files-->
     <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/script.js" defer></script>
 </head>
 <body>
     <!--HEADER-->
     <header>
-        <img src="images/shop-window.svg" alt="Logo">
+        <img src="images/shop-window.svg" alt="Logo" loading="lazy">
         <span>Timbuktu Chamber of Commerce</span>
-        <nav class="hamburguer">
-            <a href="">Home</a>
+        <button class="hamburguer" name="hamburguer"></button>
+        <nav id="nav" class="nav">
+            <a href="#">Home</a>
             <a href="">Directory</a>
             <a href="">Join</a>
             <a href="">Discover</a>
@@ -56,7 +58,7 @@
         <section class="current-weather">
             <h2>Current Weather</h2>
             <div class="weather-grid">
-                <img src="images/cloud-sun.svg" alt="Weather">
+                <img src="images/cloud-sun.svg" alt="Weather" loading="lazy">
                 <div>
                     <p>75º F</p>
                     <p>Party Cloudy</p>
@@ -81,6 +83,11 @@
 
         <!--busines cards-->
         <section class="business-card">
+            <div class="display-option">
+                <button id="grid" name="grid">Grid</button>
+                <button id="list" name="list">List</button>
+            </div>
+            <div class="display"></div>
         </section>
     </main>
 
@@ -94,9 +101,9 @@
         </div>
 
         <div class="iamges-links">
-            <a href=""><img src="images/youtube.svg" alt="YouTube"></a>
-            <a href=""><img src="images/twitter-x.svg" alt="Twitter-X"></a>
-            <a href=""><img src="images/linkedin.svg" alt="LinkedIn"></a>
+            <a href=""><img src="images/youtube.svg" alt="YouTube" loading="lazy"></a>
+            <a href=""><img src="images/twitter-x.svg" alt="Twitter-X" loading="lazy"></a>
+            <a href=""><img src="images/linkedin.svg" alt="LinkedIn" loading="lazy"></a>
         </div>
 
         <div>

@@ -19,7 +19,7 @@ getData();
 //create business cards
 const displayCards = (businesses) => {
     businesses.forEach((business) => {
-        const section = document.querySelector(".business-card");
+        const div = document.querySelector(".display");
 
         //card grid
         const card = document.createElement("div");
@@ -28,9 +28,21 @@ const displayCards = (businesses) => {
         //h2
         const h2 = document.createElement('h2');
         h2.textContent = business.names;
+        
+        //h6
+        const h3 = document.createElement('h3');
+        if (business.membership == 1) {
+            h3.textContent = "Member";
+        } else if (business.membership == 2) {
+            h3.textContent = "Silver";
+        } else {
+            h3.textContent = "Golden";
+        }
+        
+
         //image
         const image = document.createElement('img');
-        image.setAttribute("src", business.imageName);
+        image.setAttribute("src", `images/${business.imageName}`);
         image.setAttribute("alt", business.names);
         image.setAttribute("loading", 'lazy');
 
@@ -50,14 +62,39 @@ const displayCards = (businesses) => {
         link.textContent = `URL: ${business.websiteURLs}`;
 
         //appending
-        //info.appendChild(phone);
-        //info.appendChild(addresses);
-        //info.appendChild(link);
+        info.appendChild(phone);
+        info.appendChild(addresses);
+        info.appendChild(link);
 
         card.appendChild(h2);
-        //card.appendChild(image);
-        //card.appendChild(info);
+        card.appendChild(h3);
+        card.appendChild(image);
+        card.appendChild(info);
 
-        section.appendChild(card);
+        div.appendChild(card);
     });
 }
+
+//display as grid or list
+const gridbtn = document.getElementById("grid");
+const listbtn = document.getElementById("list");
+const display = document.querySelector('.display');
+
+gridbtn.addEventListener("click", () => {
+	display.classList.add("display");
+	display.classList.remove("display-list");
+});
+
+listbtn.addEventListener("click", () => {
+	display.classList.add("display-list");
+	display.classList.remove("display");
+});
+
+//hamburguer menu
+const hamburguer = document.querySelector(".hamburguer");
+const nav = document.getElementById("nav");
+
+hamburguer.addEventListener('click', () => {
+    nav.classList.toggle("show");
+    hamburguer.classList.toggle("show");
+})

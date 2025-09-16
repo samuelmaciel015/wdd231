@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
 }
 body{
     font-family: "Lato", sans-serif;
@@ -9,9 +9,10 @@ body{
 
 /*HEADER*/
 header{
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 44px 1fr 44px;
     gap: 1rem;
+    align-items: end;
 }
 header span{
     font-size: 24px;
@@ -21,9 +22,8 @@ header span{
 .hamburguer{
     width: 44px;
     text-align: center;
-}
-.hamburguer a{
-    display: none;
+    border: none;
+    background-color:inherit;
 }
 .hamburguer::before {
     content: "\2630";
@@ -33,6 +33,29 @@ header span{
 .hamburguer.show::before {
     content: "\00D7";
     font-size: 2.3rem;
+    float: right;
+}
+.nav {
+    display: none;
+}
+.nav.show{
+    display: block;
+    grid-column: span 4;
+}
+nav a{
+    display: block;
+    height: 40px;
+    border-bottom: 1px solid rgb(44, 43, 43);
+    align-content: end;
+    color: rgb(44, 43, 43);
+    text-decoration: none;
+    width: 100%;
+    padding: 1%;
+    
+}
+nav a[href="#"] {
+    background-color: rgb(44, 43, 43);
+    color: white;
 }
 
 /*MAIN*/
@@ -53,7 +76,7 @@ main h2:nth-child(2){
 .events,
 .current-weather,
 .weather-forecast,
-.business-card div {
+.display .card-grid{
     background-color: rgb(199, 196, 196);
     margin: 2%;
     min-height: 150px;
@@ -89,25 +112,73 @@ main h2:nth-child(2){
 }
 
 /*BUSINESS CARDS*/
-.business-card div {
+.business-card .display-option{
+    background-color: rgb(44, 43, 43);
     text-align: center;
+    align-content: center;
+    min-height: 35px;
+    margin: 0 2%;
+    padding: 5px;
 }
-.business-card div img{
-    width: 100%;
+.display-option button{
+    padding: 7px 30px;
+    margin: 0 5px;
 }
-.business-card .card-grid{
+/*GRID*/
+.display{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.display .card-grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 2%;
+    padding: 3%;
     column-gap: 1rem;
     row-gap: 1rem;
+    text-align: center;
 }
-.business-card div h2{
+.display .card-grid img{
+    width: 100%;
+}
+.display .card-grid h2{
+    grid-column: span 2;
+}
+.display .card-grid h3{
     grid-column: span 2;
     border-bottom: 1px solid black;
 }
-.business-card .card-grid div{
+
+.display .card-grid div{
     text-align: justify;
+}
+/*LIST*/
+.display-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.display-list img {
+    display: none;
+}
+.display-list h3{
+    border: none;
+    padding: 7px;
+}
+.display-list .card-grid{
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+    min-height: 100px;
+    background-color: rgb(199, 196, 196);
+    margin: 1% 2%;
+    font-size: small;
+}
+.display-list .card-grid div{
+    display: flex;
+    justify-content: space-around;
+}
+.display-list .card-grid div p{
+    padding: 7px;
 }
 
 /*FOOTER*/
