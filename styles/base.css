@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Schibsted Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #2e2e2e;
+}
+/******************HEADER****************/
+header {
+    display: grid;
+    grid-template-columns: 44px auto 44px;
+    column-gap: 1rem;
+    padding: .5rem;
+    border-bottom: 1px solid #2e2e2e;
+    margin: 1rem;
+}
+header img {
+    height: 44px;
+    cursor: pointer;
+}
+header span {
+    align-self:flex-end;
+}
+
+/******************HAMBURGUER****************/
+.hamburguer {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.hamburguer::before{
+    content: "\2630";
+    font-size: 40px;
+}
+.hamburguer.show::before {
+    content: "\00D7";
+    font-size: 40px;
+}
+
+/******************NAVIGATION****************/
+.navigation {
+    display: none;
+}
+.navigation.show {
+    display: block;
+}
+.navigation li {
+    background-color: #2e2e2e;
+    border: 1px solid black;
+}
+.navigation li.current {
+    background-color: #5c5c5c;
+}
+.navigation li:hover {
+    background-color: #5c5c5c;
+}
+.navigation a {
+    text-decoration: none;
+    color: #eee;
+    cursor: pointer;
+    display: flex;
+    padding: 1rem;
+}
+
+/******************MAIN****************/
+main {
+    padding: .75rem;
+    flex-grow: 1;
+}
+section {
+    background-color: #b5b3b3;
+    height: 300px;
+    margin-bottom: 1rem;
+}
+section h2 {
+    background-color: #2e2e2e;
+    color: #eee;
+    text-align: center;
+    height: 27px;
+}
+section p {
+    margin: 1rem .5rem;
+    text-align: justify;
+}
+.photo {
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    grid-template-rows: 27px;
+}
+.photo h2 {
+    grid-column: 1/4;
+}
+section img {
+    padding: 1rem .5rem;
+    max-width: 300px;
+    max-height: 80%;
+    grid-column: 2/3;
+    justify-self: center;
+}
+.certificate{
+    height:auto;
+    background: none;
+    display: flex;
+    flex-direction: column;
+}
+.btnContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+}
+.certificate button {
+    margin: 1rem 0;
+    cursor: pointer;
+    border-radius: 7px;
+    border: 1px solid black;
+    background-color: #b5b3b3;
+    font-weight: bold;
+}
+#credits {
+    text-align: center;
+}
+.certificate h3 {
+    border: 1px solid black;
+    font-weight:normal;
+    text-align: center;
+    height: 25px;
+    background-color: #b5b3b3;
+    margin-bottom: .5rem;
+}
+/******************FOOTER****************/
+.social{
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: .25rem;
+}
+.social img {
+    height: 50px;
+}
+footer {
+    background-color: #b5b3b3;
+    text-align: center;
+}
+footer p {
+    padding: .25rem;
+}
