@@ -1,6 +1,4 @@
-function reload() {
-    window.location.reload();
-}
+
 
 //hambuguer button
 const navBtn = document.querySelector('#ham-btn');
