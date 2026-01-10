@@ -1,3 +1,7 @@
+function reload() {
+    window.location.reload();
+}
+
 //hambuguer button
 const navBtn = document.querySelector('#ham-btn');
 const navBar = document.querySelector('#nav-bar');
