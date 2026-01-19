@@ -1,0 +1,33 @@
+{
+    "family_name": "Maciel",
+    "moved_date": "2026-01-02",
+    "number_of_family_members": 5,
+    "visited_by_bishopric": true,
+    "family_members": [
+        {
+            "name": "Ana Claudia",
+            "gender": "female",
+            "birthdate": "1975-09-18"
+        },
+        {
+            "name": "Leonardo Severo",
+            "gender": "male",
+            "birthdate": "1981-12-01"
+        },
+        {
+            "name": "Samuel",
+            "gender": "male",
+            "birthdate": "2004-03-15"
+        },
+        {
+            "name": "Rebeca Demy",
+            "gender": "female",
+            "birthdate": "2005-05-31"
+        },
+        {
+            "name": "Gabriela Lana",
+            "gender": "female",
+            "birthdate": "2015-10-19"
+        }
+    ]
+}

@@ -123,10 +123,10 @@ btnWdd.addEventListener('click', () => {
     createCourses(courses.filter(course => course.subject == 'WDD'));
 })
 
-function createCourses(courses) {
+function createCourses(newCourses) {
     const divCourses = document.getElementById("courses");
     divCourses.innerHTML = "";
-    courses.forEach((course) => {
+    newCourses.forEach((course) => {
 
         const h3 = document.createElement('h3');
 
