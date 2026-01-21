@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Lato", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh
+}
+
+/*HEADER*/
+header{
+    display: grid;
+    grid-template-columns: 44px 1fr 44px;
+    gap: 1rem;
+    align-items: end;
+}
+header span{
+    font-size: 24px;
+    align-self: end;
+}
+/*NAV*/
+.hamburguer{
+    width: 44px;
+    text-align: center;
+    border: none;
+    background-color:inherit;
+}
+.hamburguer::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburguer.show::before {
+    content: "\00D7";
+    font-size: 2.3rem;
+    float: right;
+}
+.nav {
+    display: none;
+}
+.nav.show{
+    display: block;
+    grid-column: span 4;
+}
+nav a{
+    display: block;
+    height: 40px;
+    border-bottom: 1px solid rgb(44, 43, 43);
+    align-content: end;
+    color: rgb(44, 43, 43);
+    text-decoration: none;
+    width: 100%;
+    padding: 1%;
+    
+}
+nav a[href="#"] {
+    background-color: rgb(44, 43, 43);
+    color: white;
+}
+
+/*MAIN*/
+main{
+    flex-grow: 1;
+}
+/*HERO*/
+.hero{
+    height: 230px;
+    background-image: url(../images/timbuktu.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 1% 0;
+}
+/*EVENTS*/
+.home{
+    font-size: 28px;
+    margin: 0 2%;
+}
+.events,
+.current-weather,
+.weather-forecast,
+.display .card-grid{
+    background-color: rgb(199, 196, 196);
+    margin: 2%;
+    min-height: 150px;
+}
+.events h2,
+.current-weather h2,
+.weather-forecast h2{
+    background-color: rgb(44, 43, 43);
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    align-content: center;
+    height: 35px;
+}
+
+/*WEATHER CURRENT*/
+.weather-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2%;
+}
+.weather-grid img{
+    justify-self: center;
+}
+
+/*WEATHER FORECAST*/
+.weather-flex{
+    padding: 2%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*BUSINESS CARDS*/
+.business-card .display-option{
+    background-color: rgb(44, 43, 43);
+    text-align: center;
+    align-content: center;
+    min-height: 35px;
+    margin: 0 2%;
+    padding: 5px;
+}
+.display-option button{
+    padding: 7px 30px;
+    margin: 0 5px;
+}
+/*GRID*/
+.display{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.display .card-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3%;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    text-align: center;
+}
+.display .card-grid img{
+    width: 100%;
+}
+.display .card-grid h2{
+    grid-column: span 2;
+}
+.display .card-grid h3{
+    grid-column: span 2;
+    border-bottom: 1px solid black;
+}
+
+.display .card-grid div{
+    text-align: justify;
+}
+/*LIST*/
+.display-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.display-list img {
+    display: none;
+}
+.display-list h3{
+    border: none;
+    padding: 7px;
+}
+.display-list .card-grid{
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+    min-height: 100px;
+    background-color: rgb(199, 196, 196);
+    margin: 1% 2%;
+    font-size: small;
+}
+.display-list .card-grid div{
+    display: flex;
+    justify-content: space-around;
+}
+.display-list .card-grid div p{
+    padding: 7px;
+}
+
+/*FOOTER*/
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(199, 196, 196);
+    padding: 2%;
+}
+footer div:nth-child(2){
+    display: flex;
+    justify-content: center;
+}
+footer a{
+    margin: 5%;
+}
+
+
+/************************************JOIN PAGE********************************/
+/*MAIN*/
+.joinContent h3 {
+    text-align: center;
+}
+
+/*FORM*/
+.joinForm{
+    width: 70%;
+    margin: 1rem 15%;
+    border: 1px solid black;
+    padding: 1rem;
+}
+.joinForm input, select{
+    display: block;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 1rem;
+}
+.joinForm select:hover{
+    cursor: pointer;
+}
+.joinForm textarea{
+    display: block;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 1rem;
+}
+.joinForm button{
+    width: 80%;
+    height: 30px;
+    background-color: rgb(199, 196, 196);
+    border: 1px solid rgb(44, 43, 43);
+    margin: 0 10%;
+}
+.joinForm button:hover{
+    cursor: pointer;
+}
+
+/*MODALS*/
+.modals div{
+    border: 1px solid rgb(44, 43, 43);
+    margin: 1rem;
+    height: 100px;
+    padding: 1rem;
+    text-align: center;
+}
+.modals button{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(199, 196, 196);
+    border: 1px solid rgb(44, 43, 43);
+    margin: 1.5% 10%;
+}
+.modals button:hover{
+    cursor: pointer;
+}
+dialog {
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    padding: 20px;
+    text-align: center;
+}

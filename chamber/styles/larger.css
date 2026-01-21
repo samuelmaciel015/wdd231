@@ -1,0 +1,101 @@
+@media only screen and (min-width:938px){
+    header{
+        display: grid;
+        grid-template-columns: 44px 1fr 1fr;
+        justify-content:initial;
+        text-align: left;
+        padding: 10px 0 10px 10px;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-around;
+        align-items:end;
+        width: 70%;
+    }
+    .hamburguer{
+        display: none;
+    }
+    .nav a{
+        display: block;
+        text-decoration: none;
+        color: rgb(44, 43, 43);
+        height:auto;
+        border: none;
+        width: auto;
+        padding:initial;
+    }
+    .nav a[href="#"]{
+        border-bottom: 1px solid rgb(44, 43, 43);
+        color: rgb(44, 43, 43);
+        background-color: inherit;
+    }
+
+    /*MAIN*/
+    main{
+        margin: 0 2%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 1rem;
+    }
+    .hero{
+        grid-column: span 4;
+        margin: 0 0 1% 0;
+    }
+    main h2:nth-child(2) {
+        margin: 0;
+        grid-column: span 4;
+    }
+    .events{
+        grid-column: span 2;
+    }
+    .business-card{
+        grid-column: span 4;
+    }
+    .events,
+    .current-weather,
+    .weather-forecast,
+    .business-card .card-grid {
+        margin: 2% 0;
+    }
+    .business-card .display{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+        column-gap: 1rem;
+    }
+    .business-card .display-option{
+        margin: 0;
+    }
+    .display-list .card-grid{
+        font-size: medium;
+    }
+
+    /*FOOTER*/
+    footer{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    /************************************JOIN PAGE********************************/
+    /*MAIN*/
+    .joinContent{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .joinContent h2{
+        grid-column: span 2;
+    }
+    .joinForm{
+        width: 80%;
+        margin: 1rem 15%;
+        border: 1px solid black;
+        padding: 1rem;
+    }
+    .modals{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .modals div{
+        height: 150px;
+        padding: 2rem;
+    }
+}

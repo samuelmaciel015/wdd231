@@ -12,7 +12,7 @@
     <meta property="og:title" content="Guarulhos Chamber">
     <meta property="og:description" content="This page provides a list of local business and other organizations that belong to the chamber of commerce.">
     <meta property="og:image" content="https://samuelmaciel015.github.io/wdd231/chamber/images/saoPaulo.jpg">
-    <meta property="og:url" content="http://127.0.0.1:5500/directory.html">
+    <meta property="og:url" content="https://samuelmaciel015.github.io/wdd231/chamber/directory.html">
 
     <!--favIcon-->
     <link rel="icon" href="images/favicon.ico">
@@ -22,10 +22,99 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
-    <!--css files-->
+    <!--external files-->
     <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/directory.js" defer></script>
 </head>
 <body>
-    
+        <!--HEADER-->
+    <header>
+        <img src="images/shop-window.svg" alt="Logo" loading="lazy">
+        <span>Timbuktu Chamber of Commerce</span>
+        <button class="hamburguer" name="hamburguer"></button>
+        <nav id="nav" class="nav">
+            <a href="">Home</a>
+            <a href="#">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="">Discover</a>
+        </nav>
+    </header>
+
+    <!--MAIN-->
+    <main>
+        <!--hero-->
+        <section class="hero"></section>
+
+        <!--content-->
+        <h2 class="home">Home</h2>
+        
+        <!--events-->
+        <section class="events">
+            <h2>Events</h2>
+            <p></p>
+        </section>
+
+        <!--current-weather-->
+        <section class="current-weather">
+            <h2>Current Weather</h2>
+            <div class="weather-grid">
+                <img src="images/cloud-sun.svg" alt="Weather" loading="lazy">
+                <div>
+                    <p>75º F</p>
+                    <p>Party Cloudy</p>
+                    <p>High: 85º</p>
+                    <p>Low: 52º</p>
+                    <p>Humility: 34%</p>
+                    <p>Sunrise: 7:30am</p>
+                    <p>Sunset: 9:59pm</p>
+                </div>
+            </div>
+        </section>
+
+        <!--weather-forecast-->
+        <section class="weather-forecast">
+            <h2>Weather Forecast</h2>
+            <div class="weather-flex">
+                <p>Today: 90ºF</p>
+                <p>Wednesday: 89ºF</p>
+                <p>Thursday: 68ºF</p>
+            </div>
+        </section>
+
+        <!--busines cards-->
+        <section class="business-card">
+            <div class="display-option">
+                <button id="grid" name="grid">Grid</button>
+                <button id="list" name="list">List</button>
+            </div>
+            <div class="display"></div>
+        </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="info-companie">
+            <p>Timbuktu Chamber of Commerce</p>
+            <p>10 Rue de La Paix</p>
+            <p>Timbuktu, Mail 999</p>
+            <p>info@timbuktu.org</p>
+            <p>(222) 555-2300</p>
+        </div>
+
+        <div class="iamges-links">
+            <a href=""><img src="images/youtube.svg" alt="YouTube" loading="lazy"></a>
+            <a href=""><img src="images/twitter-x.svg" alt="Twitter-X" loading="lazy"></a>
+            <a href=""><img src="images/linkedin.svg" alt="LinkedIn" loading="lazy"></a>
+        </div>
+
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>Marie Martinez</p>
+            <p>&copy;<span id="currentYear"></span> Timbuktu Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
 </body>
 </html>
