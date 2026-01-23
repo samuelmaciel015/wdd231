@@ -38,7 +38,7 @@ header span{
     font-size: 2.3rem;
     float: right;
 }
-.nav {
+nav {
     display: none;
 }
 .nav.show{
@@ -60,6 +60,10 @@ nav a[href="#"] {
     background-color: rgb(44, 43, 43);
     color: white;
 }
+nav a:hover{
+    background-color: rgb(44, 43, 43);
+    color: white;
+}
 
 /*MAIN*/
 main{
@@ -68,7 +72,8 @@ main{
 /*HERO*/
 .hero{
     height: 230px;
-    background-image: url(../images/timbuktu.jpg);
+    margin: 1rem 0;
+    background-image: url(../images/saoPaulo.jpg);
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;

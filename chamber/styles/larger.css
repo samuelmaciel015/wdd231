@@ -6,16 +6,17 @@
         text-align: left;
         padding: 10px 0 10px 10px;
     }
-    .nav{
+    nav, .nav.show{
         display: flex;
         justify-content: space-around;
         align-items:end;
         width: 70%;
+        grid-column: inherit;
     }
     .hamburguer{
         display: none;
     }
-    .nav a{
+    nav a{
         display: block;
         text-decoration: none;
         color: rgb(44, 43, 43);
@@ -24,7 +25,7 @@
         width: auto;
         padding:initial;
     }
-    .nav a[href="#"]{
+    nav a[href="#"]{
         border-bottom: 1px solid rgb(44, 43, 43);
         color: rgb(44, 43, 43);
         background-color: inherit;
