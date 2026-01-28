@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guarulhos Chamber | Home</title>
+    <meta name="description" content="This page provides a list of local business and other organizations that belong to the chamber of commerce.">
+    <meta name="author" content="Samuel A. Maciel">
+
+    <!--social meta tgas-->
+    <meta property="og:title" content="Guarulhos Chamber">
+    <meta property="og:description" content="This page provides a list of local business and other organizations that belong to the chambe of commerce.">
+    <meta property="og:image" content="https://samuelmaciel015.github.io/wdd231/chamber/images/saoPaulo.jpg">
+    <meta property="og:url" content="https://samuelmaciel015.github.io/wdd231/chamber/index.html">
+
+    <!--favIcon-->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!--google api font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!--external files-->
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/script.mjs" type="module"></script>
+</head>
+
+<body>
+            <!--HEADER-->
+            <header>
+                <img src="images/shop-window.svg" alt="Logo" loading="lazy">
+                <span>Guarulhos Chamber of Commerce</span>
+                <button class="hamburguer" name="hamburguer" aria-label="Button"></button>
+                <nav id="nav" class="nav">
+                    <a href="#">Home</a>
+                    <a href="directory.html">Directory</a>
+                    <a href="">Join</a>
+                    <a href="">Discover</a>
+                </nav>
+            </header>
+            
+            <!--MAIN-->
+            <main>
+                <!--hero-->
+                <section class="hero"></section>
+            
+                <!--content-->
+                <h1 class="title">Home</h1>
+            
+                <!--events-->
+                <section class="events">
+                    <h2>Events</h2>
+                    <p></p>
+                </section>
+            
+                <!--current-weather-->
+                <section class="current-weather">
+                    <h2>Current Weather</h2>
+                    <div class="weather-grid">
+                        <img id="currentWeather-image" loading="lazy">
+                        <div id="currentWeather-info"></div>
+                    </div>
+                </section>
+            
+                <!--weather-forecast-->
+                <section class="weather-forecast">
+                    <h2>Weather Forecast</h2>
+                    <div class="weather-flex">
+                        <p id="weatherToday"></p>
+                        <p id="weatherTomorrow"></p>
+                        <p id="weatherAfterTomorrow"></p>
+                    </div>
+                </section>
+            
+                <!--busines cards-->
+                <section class="business-card">
+                    <div class="display"></div>
+                </section>
+            </main>
+            
+            <!--FOOTER-->
+            <footer>
+                <div class="info-companie">
+                    <p>Guarulhos Chamber of Commerce</p>
+                    <p>10 Rue de La Paix</p>
+                    <p>Guarulhos, Mail 999</p>
+                    <p>info@guarulhos.org</p>
+                    <p>(222) 555-2300</p>
+                </div>
+            
+                <div class="iamges-links">
+                    <a href="https://www.youtube.com/"><img src="images/youtube.svg" alt="YouTube" loading="lazy"></a>
+                    <a href="https://x.com/?lang=pt"><img src="images/twitter-x.svg" alt="Twitter-X" loading="lazy"></a>
+                    <a href="www.linkedin.com/in/samuel-maciel-908935344"><img src="images/linkedin.svg" alt="LinkedIn"
+                            loading="lazy"></a>
+                </div>
+            
+                <div>
+                    <p>WDD231 Class Project</p>
+                    <p>Samuel Maciel</p>
+                    <p>&copy;<span id="currentYear"></span> Guarulhos Chamber of Commerce</p>
+                    <p id="lastModified"></p>
+                </div>
+            </footer>
+</body>
+
+</html>

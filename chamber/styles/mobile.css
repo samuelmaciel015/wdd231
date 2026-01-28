@@ -80,7 +80,7 @@ main{
     margin: 1% 0;
 }
 /*EVENTS*/
-.home{
+.title{
     font-size: 28px;
     margin: 0 2%;
 }
@@ -191,6 +191,7 @@ main{
 .display-list .card-grid div p{
     padding: 7px;
 }
+
 
 /*FOOTER*/
 footer{
