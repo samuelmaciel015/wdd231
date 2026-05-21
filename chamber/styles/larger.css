@@ -75,28 +75,4 @@
         flex-direction: row;
         justify-content: space-between;
     }
-    /************************************JOIN PAGE********************************/
-    /*MAIN*/
-    .joinContent{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .joinContent h2{
-        grid-column: span 2;
-    }
-    .joinForm{
-        width: 80%;
-        margin: 1rem 15%;
-        border: 1px solid black;
-        padding: 1rem;
-    }
-    .modals{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .modals div{
-        height: 150px;
-        padding: 2rem;
-    }
 }
