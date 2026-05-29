@@ -1,5 +1,6 @@
 import { GetWeather } from "./weather.mjs";
 import { GetData } from "./createCards.mjs";
+import { OpenModal, CloseModal } from "./modal.mjs";
 
 //get current year
 const year = document.querySelector("#currentYear");
@@ -17,7 +18,7 @@ const nav = document.getElementById("nav");
 hamburguer.addEventListener('click', () => {
     nav.classList.toggle("show");
     hamburguer.classList.toggle("show");
-});
+})
 
 //weather api
 const api = 'https://api.openweathermap.org/data/2.5/weather?lat=-23.46047&lon=-46.52551&units=metric"&appid=281043fec68c82df1794bc80e020fa1e';
@@ -119,3 +120,25 @@ export const DisplayCards = (businesses) => {
         }
     });
 }
+
+//open and close modal when button is clicked
+document.getElementById("nonProfit").addEventListener("click", () => {
+    OpenModal("modal");
+    document.getElementById("title").innerHTML = "Non Profit Membership Level";
+});
+document.getElementById("bronze").addEventListener("click", () => {
+    OpenModal("modal");
+    document.getElementById("title").innerHTML = "Bronze Membership Level";
+});
+document.getElementById("silver").addEventListener("click", () => {
+    OpenModal("modal");
+    document.getElementById("title").innerHTML = "Silver Membership Level";
+});
+document.getElementById("gold").addEventListener("click", () => {
+    OpenModal("modal");
+    document.getElementById("title").innerHTML = "Gold Membership Level";
+});
+
+document.getElementById("close").addEventListener("click", () => {
+    CloseModal("modal");
+});
