@@ -1,6 +1,5 @@
 import { GetWeather } from "./weather.mjs";
 import { GetData } from "./createCards.mjs";
-import { OpenModal, CloseModal } from "./modal.mjs";
 
 //get current year
 const year = document.querySelector("#currentYear");
@@ -18,7 +17,7 @@ const nav = document.getElementById("nav");
 hamburguer.addEventListener('click', () => {
     nav.classList.toggle("show");
     hamburguer.classList.toggle("show");
-})
+});
 
 //weather api
 const api = 'https://api.openweathermap.org/data/2.5/weather?lat=-23.46047&lon=-46.52551&units=metric"&appid=281043fec68c82df1794bc80e020fa1e';

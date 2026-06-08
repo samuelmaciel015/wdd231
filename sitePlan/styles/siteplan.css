@@ -1,0 +1,147 @@
+@media screen and (min-width: 1082px) {
+    :root {
+        --background-color: #d2d5da;
+        --font-color1: #1d1b1b;
+        --font-color2: #f5f5f5;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Belleza", sans-serif;
+        color: var(--font-color1);
+        text-align: center;
+    }
+
+    /*HEADER*/
+    header {
+        padding: 1rem;
+    }
+
+    /*MAIN*/
+    /*SITE NAME*/
+    .site-name {
+        background-color: var(--background-color);
+        padding: .75rem;
+        height: 8rem;
+    }
+
+    .site-name h3 {
+        font-size: 70px;
+    }
+
+    /*SITE PURPOSE*/
+    .site-purpose {
+        padding: 3rem;
+    }
+
+    /*GRID CONTAINER*/
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 2rem;
+        column-gap: 2rem;
+    }
+
+    /*SCENARIOS*/
+    .scenarios ul li {
+        text-align: justify;
+        padding: 1rem 0 0 25%;
+        list-style: none;
+
+    }
+
+    /*GRID CONTAINER2*/
+    .grid-container2 {
+        display: grid;
+        padding: 1rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        row-gap: 1rem;
+        text-align: justify;
+    }
+
+    /*COLOR SCHEMA*/
+    .color-schema h3,
+    p {
+        color: var(--font-color1);
+    }
+
+    .color-schema button {
+        background-color: var(--font-color1);
+        color: var(--font-color2);
+        border: none;
+        width: 90px;
+        border-radius: 4px;
+        padding: 6px 14px;
+    }
+
+    .color-schema p:nth-child(3) {
+        grid-row: 2 / 3;
+    }
+
+    .color-schema p:nth-child(4) {
+        grid-row: 2 / 3;
+    }
+
+    .color-schema p:nth-child(5) {
+        grid-row: 3 / 4;
+    }
+
+    .color-schema button {
+        grid-row: 3 / 4;
+    }
+
+    .color-schema p:nth-child(7) {
+        grid-row: 4 / 5;
+    }
+
+    .color-schema .background-color {
+        background-color: var(--background-color);
+        border: 1px solid black;
+        width: 90px;
+        grid-row: 4 / 5;
+    }
+
+    .color-schema .background-color2 {
+        background-color: white;
+        border: 1px solid black;
+        width: 90px;
+        grid-row: 4 / 5;
+    }
+
+    /*TYPOGRAPH*/
+    .typograph h3 {
+        padding: 3rem;
+        font-size: 40px;
+    }
+
+    /*FLEX CONTAINER*/
+    .flex-container {
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+        margin: 0 15%;
+    }
+    .flex-container img{
+        width: 100%;
+        height: auto;
+    }
+
+    /*WIREFRAME*/
+    .wireframe h3 {
+        padding: 1rem;
+    }
+
+    /*FOOTER*/
+    footer {
+        height: 5rem;
+        padding: 2rem;
+        margin-top: 1rem;
+        background-color: var(--background-color);
+    }
+}
