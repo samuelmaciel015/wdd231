@@ -99,4 +99,24 @@
         height: 150px;
         padding: 2rem;
     }
+
+        /************************************DISCOVER PAGE********************************/
+    .title{
+        grid-column: span 4;
+    }
+    .discover{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        grid-column: span 4;
+    }
+
+    .discover .card-grid {
+        display: grid;
+        grid-template-areas:
+        "image title"
+        "image description"
+        "image address"
+        "image button";
+    }
 }

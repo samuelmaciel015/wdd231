@@ -27,9 +27,10 @@
         rel="stylesheet">
 
     <!--external files-->
-    <link rel="stylesheet" href="../styles/normalize.css">
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preload" href="../styles/normalize.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="styles/small.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="styles/larger.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <script src="scripts/join.js" defer></script>
     <script src="scripts/script.mjs" type="module"></script>
 </head>
 

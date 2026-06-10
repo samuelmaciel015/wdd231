@@ -1,0 +1,50 @@
+export const discoverData = [
+    {
+        "title": "Historic Old Town Square",
+        "image": "historicOldTownSquare.webp",
+        "address": "100 Heritage Plaza, City Center",
+        "description": "The heart of the city’s history, Old Town Square features cobblestone streets, centuries-old architecture, street performers, and charming cafés. It’s the perfect starting point to understand the city’s cultural roots and vibrant daily life."
+    },
+    {
+        "title": "Riverside Promenade Park",
+        "image": "riversidePromenadePark.webp",
+        "address": "45 Riverwalk Avenue",
+        "description": "A scenic walking and cycling path along the river, offering skyline views, public art installations, and sunset photo spots. Ideal for a relaxed afternoon stroll or morning jog."
+    },
+    {
+        "title": "Metropolitan Art Museum",
+        "image": "metropolitanArtMuseum.webp",
+        "address": "12 Gallery Lane, Arts District",
+        "description": "Home to both classical masterpieces and contemporary exhibitions, this museum showcases local and international artists. Guided tours and interactive exhibits make it engaging for all visitors."
+    },
+    {
+        "title": "Skyline Observation Tower",
+        "image": "skylineObservationTower.webp",
+        "address": "1 Summit Drive",
+        "description": "For panoramic city views, the observation deck provides a 360-degree perspective from above. Visit at sunset to watch the city lights come alive."
+    },
+    {
+        "title": "Central Market Hall",
+        "image": "centralMarketHall.webp",
+        "address": "89 Market Street",
+        "description": "A bustling indoor market filled with local vendors selling fresh produce, street food, handmade crafts, and regional delicacies. A must-visit for food lovers wanting authentic flavors."
+    },
+    {
+        "title": "Botanical Garden Conservatory",
+        "image": "botanicalGardenConservatory.webp",
+        "address": "300 Greenway Boulevard",
+        "description": "A tranquil escape featuring themed gardens, exotic plants, and seasonal floral displays. It’s a peaceful retreat from the city’s busy streets."
+    },
+    {
+        "title": "Harborfront Cultural Center",
+        "image": "harborfrontCulturalCenter.webp",
+        "address": "18 Dockside Way",
+        "description": "This waterfront venue hosts live music, theater performances, and art festivals throughout the year. A great place to experience the city’s creative scene."
+    },
+    {
+        "title": "Historic Grand Theater",
+        "image": "historicGrandTheater.webp",
+        "address": "77 Opera House Road",
+        "description": "An architectural gem offering concerts, ballet, and classic film screenings. Even if you don’t attenda show, the guided interior tours reveal stunning designdetails and rich history."
+    }
+]

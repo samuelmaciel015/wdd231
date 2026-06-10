@@ -1,0 +1,40 @@
+@media only screen and (min-width:641px) {
+    /************************************DISCOVER PAGE********************************/
+
+    .discover .card-grid {
+        display: grid;
+        grid-template-areas:
+            "image title"
+            "image description"
+            "image address"
+            "image button";
+    }
+
+    .card-grid h2 {
+        grid-area: title;
+    }
+
+    .card-grid figure {
+        grid-area: image;
+    }
+
+    .card-grid p {
+        grid-area: description;
+    }
+
+    .card-grid address {
+        grid-area: address;
+    }
+
+    .card-grid button {
+        grid-area: button;
+    }
+
+    .card-grid img {
+        width: 250px
+    }
+    .card-grid img:hover{
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+}

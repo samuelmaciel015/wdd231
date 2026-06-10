@@ -22,21 +22,21 @@
     <!--google api font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;&display=swap" rel="stylesheet">
 
     <!--external files-->
-    <link rel="stylesheet" href="../styles/normalize.css">
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preload" href="../styles/normalize.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="styles/small.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="styles/medium.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="styles/larger.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <script src="scripts/discover.mjs" type="module"></script>
     <script src="scripts/script.mjs" type="module"></script>
 </head>
 
 <body>
     <!--HEADER-->
     <header>
-        <img src="images/shop-window.svg" alt="Logo" loading="lazy">
+        <img src="images/shop-window.svg" alt="Logo" loading="lazy" width="50" height="50">
         <span>Guarulhos Chamber of Commerce</span>
         <button class="hamburguer" name="hamburguer" aria-label="Button"></button>
         <nav id="nav" class="nav">
@@ -50,6 +50,11 @@
     <!--MAIN-->
     <main>
         <h1 class="title">Discover</h1>
+        <div id="discover" class="discover">
+            <!--cards will be created here-->
+        </div>
+
+        <h2 class="message"><span id="message"></span></h2>
     </main>
 
     <!--FOOTER-->
