@@ -1,0 +1,79 @@
+@media screen and (min-width: 1024px) {
+  .grid-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #container {
+    display: none;
+  }
+
+  nav {
+    opacity: 1;
+    visibility: visible;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
+
+  nav a:hover {
+    width:auto;
+    background-color: var(--background-color1);
+    color: white;
+    border-radius: 5px;
+  }
+
+  .grid-courses {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 90%;
+  }
+
+  .grid-footer div:nth-child(2) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .grid-footer div:nth-child(2) a {
+    width: 120px;
+    margin: 0 1rem;
+    padding: 8px 0;
+    border-bottom: 2PX solid var(--background-color1);
+  }
+
+  /********************************COURSES PAGE********************************/
+  .course {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items:flex-start;
+    justify-items: center;
+  }
+
+  .course div:nth-child(2) {
+    padding: .7rem 0;
+  }
+
+  .course .image {
+    width: 90%;
+    height: 300px;
+  }
+
+  /********************************APPLY PAGE********************************/
+  .form-main p {
+    text-align: center;
+  }
+
+  form {
+    margin: 1rem 30%;
+  }
+}

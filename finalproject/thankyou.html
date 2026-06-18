@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panter Aviation | Sucesso</title>
+
+    <!--CSS EXTERNO-->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!--JS EXTERNO-->
+    <script src="scripts/menuButton.js" defer></script>
+    <script src="scripts/onclick.js" defer></script>
+    <script src="scripts/validador.js" defer></script>
+
+    <!--LOGO ICON-->
+    <link rel="icon" href="images/logo.ico">
+
+    <!--FONTS GOOGLE API-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+
+    <!--SOCIAL MEDIA META TAGS-->
+    <meta proerty="og:title" content="Panter Aviation">
+    <meta proerty="og:description" content="Company approved by ANAC (Brazilian Civil Aviation Agency) to provide AVSEC courses. Operating in the provision of AVSEC protection and quality control services throughout Brazil!">
+    <meta proerty="og:img" content="">
+    <meta proerty="og:url" content="">
+
+</head>
+
+<body>
+    <!--HEADER-->
+    <header>
+        <div class="grid-header">
+            <div class="logo">
+                <img src="images/logo.jpeg" alt="Panter Aviation Logo" onclick="go_begin()" loading="lazy">
+            </div>
+
+            <!--MENU BUTTON-->
+            <div id="container">
+                <div id="line1"></div>
+                <div id="line2"></div>
+                <div id="line3"></div>
+            </div>
+            <nav id="menu">
+                <a class="way-finding" href="#">BEGIN</a>
+                <a href="courses.html">AVSEC COURSES</a>
+                <a href="apply.html">APPLY</a>
+            </nav>
+        </div>
+    </header>
+
+    <!--MAIN-->
+    <main class="thankyou-main">
+        <h1>Your registration was successful!</h1>
+        <p>Thank you very much for enrolling and trusting our services. We will contact you to confirm your registration and
+        provide further details.</p>
+
+        <section class="menu-central">
+            <label for="begin">
+                <p>Begin</p>
+                <button id="begin" onclick=go_begin()></button>
+            </label>
+            
+            <label for="courses">
+                <p>Courses</p>
+                <button id="courses" onclick=go_courses()></button>
+            </label>
+            
+            <label for="apply">
+                <p>Apply</p>
+                <button id="apply" onclick=go_apply()></button>
+            </label>
+        </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="grid-footer">
+            <img src="images/panter-white.png" alt="Panter Aviation Logo" onclick=go_top() loading="lazy">
+    
+            <div>
+                <a href="#">Begin</a>
+                <a href="courses.html">AVSEC Courses</a>
+                <a href="apply.html">Apply</a>
+            </div>
+    
+            <div>
+                <img src="images/facebook.png" alt="Facebook" onclick=open_facebook() loading="lazy">
+                <img src="images/instagram.png" alt="Instagram" onclick=open_instagram() loading="lazy">
+            </div>
+        </div>
+        <p>samorimmaciel@byupathway.edu</p>
+        <p>©<span id="current-year"></span> SAMUEL MACIEL - BRAZIL</p>
+    </footer>
+</body>
+
+</html>

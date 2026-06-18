@@ -1,0 +1,47 @@
+@media screen and (max-width: 470px){
+    footer {
+        padding: 1rem .5rem;
+    }
+    footer img {
+        width: 70px;
+    }
+
+    .grid-footer div:nth-child(2) a {
+        width: 150px;
+    }
+
+    .grid-footer div:nth-child(3) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner_text {
+        width: 100%;
+    }
+
+    .banner_text h1 {
+        font-size: 40px;
+    }
+
+    .courses h2 {
+        text-align: center;
+        padding: 1rem;
+        margin: 1rem;
+        background-color: var(--background-color2);
+        width: 100%;
+        color: white;
+    }
+
+    form fieldset {
+        min-width: initial;
+    }
+
+    .button-upload {
+        min-width: initial;
+    }
+
+    .apply {
+        min-width: initial;
+    }
+
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panter Aviation | Courses</title>
+
+    <!--CSS EXTERNO-->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!--JS EXTERNO-->
+    <script src="scripts/menuButton.js" defer></script>
+    <script src="scripts/onclick.js" defer></script>
+
+    <!--LOGO ICON-->
+    <link rel="icon" href="images/logo.ico">
+
+    <!--FONTS GOOGLE API-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+    <!--SOCIAL MEDIA META TAGS-->
+    <meta proerty="og:title" content="Panter Aviation">
+    <meta proerty="og:description" content="Company approved by ANAC (Brazilian Civil Aviation Agency) to provide AVSEC courses. Operating in the provision of AVSEC  protection and quality control services throughout Brazil!">
+    <meta proerty="og:img" content="">
+    <meta proerty="og:url" content="">
+</head>
+
+<body>
+    <!--HEADER-->
+    <header>
+        <div class="grid-header">
+            <div class="logo">
+                <img src="images/logo.jpeg" alt="Panter Aviation Logo" onclick="go_begin()" loading="lazy">
+            </div>
+
+            <!--MENU BUTTON-->
+            <div id="container">
+                <div id="line1"></div>
+                <div id="line2"></div>
+                <div id="line3"></div>
+            </div>
+            <nav id="menu">
+                <a href="index.html">BEGIN</a>
+                <a class="way-finding" href="#">AVSEC COURSES</a>
+                <a href="apply.html">APPLY</a>
+            </nav>
+        </div>
+    </header>
+
+    <!--MAIN-->
+    <main class="course-main">
+        <section class="course">
+            <div class="image">
+                <img src="images/basic.jpg" alt="Basic AVSEC Course" loading="lazy">
+            </div>
+            <div>
+                <h2>Basic AVSEC Course</h2>
+                <p>The Basic AVSEC Course is the initial course that introduces a professional to the area of ​​Civil Aviation Security,
+                enabling them for various AVSEC-related activities such as:<br><br>- Supervising passenger transit between the boarding
+                area and the aircraft;<br>- Identification and access control of people and objects to restricted or controlled areas of
+                airports;<br>- Identification and access control of people to the aircraft;<br>- Identification and inspection of people
+                and vehicles in vehicle access control;<br>- Inspection of Onboard Provisions or in-flight service;<br>- Inspection of
+                Sterile Area;<br>- Inspection of baggage, cargo and objects in general using explosive detection dogs;<br>- Inspection
+                of people;<br>- Aircraft security inspection;<br>- Manual inspection of objects;<br>- Patrolling and surveillance of
+                in-flight service production and storage facilities and terminals. Cargo or mail;<br>- Patrolling and surveillance of
+                the operational area of ​​airports;<br>- Patrolling and surveillance of access control channels;<br>-
+                Performing surveillance of onboard provisions, onboard service, cargo or mail, or checked baggage;<br>- Consolidation of
+                the flight's AVSEC dispatch;<br>- Protection of sterile areas or aircraft;<br>- Receiving provisions on the
+                aircraft;<br>-
+                Receiving and identifying cargo or mail in the secure cargo chain; and<br>- Aircraft security verification.<br><br>It's
+                a vast area of ​​opportunities that you will have to develop professionally.</p>
+            </div>
+        </section>
+
+        <section class="course">
+            <div class="image">
+                <img src="images/inspection.jpg" alt="Security Inspection Course" loading="lazy">
+            </div>
+            <div>
+                <h2>Security Inspection Course</h2>
+                <p>The Security Inspection Course is a course that specializes a professional in the area of ​​Civil Aviation Security, in
+                addition to the activities enabled by the Basic AVSEC course. Some of these activities are:<br><br>- Inspection of
+                baggage, cargo and objects in general by means of X-rays or tomographs;<br>- Inspection of people by means of
+                body-scan;<br>- Search (personal search) of people;<br>- Supervising and monitoring the inspection and search of
+                passengers and baggage;<br>- Supervising and evaluating the on-the-job training for security inspection certification;
+                and<br>- Conducting quality control tests.<br><br>This course further increases the range of opportunities you will have
+                in the AVSEC area by specializing in the activities listed above, being a great differentiator.</p>
+            </div>
+        </section>
+
+        <section class="course">
+            <div class="image">
+                <img src="images/passenger.jpg" alt="AVSEC Passenger Service Course" loading="lazy">
+            </div>
+            <div>
+                <h2>AVSEC Passenger Service Course</h2>
+                <p>The AVSEC Passenger Service Course aims to qualify professionals to perform all passenger service for Airline Operators
+                in both commercial and executive aviation with ANAC certification.
+                
+                Some of these activities are listed below:<br><br>- Passenger service at check-in (passenger dispatch)
+                or identification and acceptance (reconciliation) of checked baggage;<br>- Supervising passenger transit between the
+                boarding area and the aircraft;<br>- Identification and access control of people to the aircraft; and<br>- Protection of
+                sterile area or aircraft.</p>
+            </div>
+        </section>
+
+        <a href="apply.html">Apply</a>
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="grid-footer">
+            <img src="images/panter-white.png" alt="Panter Aviation Logo" onclick=go_top() loading="lazy">
+    
+            <div>
+                <a href="#">Begin</a>
+                <a href="courses.html">AVSEC Courses</a>
+                <a href="apply.html">Apply</a>
+            </div>
+    
+            <div>
+                <img src="images/facebook.png" alt="Facebook" onclick=open_facebook() loading="lazy">
+                <img src="images/instagram.png" alt="Instagram" onclick=open_instagram() loading="lazy">
+            </div>
+        </div>
+        <p>samorimmaciel@byupathway.edu</p>
+        <p>©<span id="current-year"></span> SAMUEL MACIEL - BRAZIL</p>
+    </footer>
+</body>
+
+</html>

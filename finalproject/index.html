@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panter Aviation | Begin</title>
+
+    <!--CSS EXTERNO-->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!--JS EXTERNO-->
+    <script src="scripts/menuButton.js" defer></script>
+    <script src="scripts/onclick.js" defer></script>
+    <script src="scripts/flipCards.js" defer></script>
+
+    <!--LOGO ICON-->
+    <link rel="icon" href="images/logo.ico">
+
+    <!--FONTS GOOGLE API-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+    <!--SOCIAL MEDIA META TAGS-->
+    <meta proerty="og:title" content="Panter Aviation">
+    <meta proerty="og:description" content="Company approved by ANAC (Brazilian Civil Aviation Agency) to provide AVSEC courses. Operating in the provision of AVSEC protection and quality control services throughout Brazil!">
+    <meta proerty="og:img" content="">
+    <meta proerty="og:url" content="">
+</head>
+
+<body>
+    <!--HEADER-->
+    <header>
+        <div class="grid-header">
+            <div class="logo">
+                <img src="images/logo.jpeg" alt="Panter Aviation Logo" onclick=reload() loading="lazy">
+            </div>
+
+            <!--MENU BUTTON-->
+            <div id="container">
+                <div id="line1"></div>
+                <div id="line2"></div>
+                <div id="line3"></div>
+            </div>
+            <nav id="menu">
+                <a class="way-finding" href="#">BEGIN</a>
+                <a href="courses.html">AVSEC COURSES</a>
+                <a href="apply.html">APPLY</a>
+            </nav>
+        </div>
+    </header>
+
+    <!--MAIN-->
+    <main>
+        <!--BANNER-->
+        <section class="banner">
+            <div class="banner_text">
+                <h1>Come and make aviation safer in Brazil.</h1>
+            </div>
+        </section>
+
+        <!--CONTENT-->
+        <section class="content">
+            <h2>Company approved by ANAC (Brazilian Civil Aviation Agency) to provide AVSEC courses. Operating in the provision of AVSEC
+            protection and quality control services throughout <strong>BRAZIL!</strong></h2>
+        </section>
+
+        <!--COURSES-->
+        <section class="courses">
+            <h2>AVSEC COURSES</h2>
+
+            <div class="grid-courses">                
+                <div class="card1">
+                    <div class="front">
+                        <h3>Basic AVSEC</h3>
+                        <p>(click here)</p>
+                    </div>
+                    <div class="back">
+                        <p>The Basic AVSEC Course is the introductory course that introduces a professional to the field of Civil Aviation
+                        Security. It's a vast area of ​​opportunities that you will have to develop professionally.</p>
+                    </div>
+                </div>
+                
+                <div class="card2">
+                    <div class="front">
+                        <h3>Safety Inspection</h3>
+                        <p>(click here)</p>
+                    </div>
+                    <div class="back">
+                        <p>The Security Inspection Course is a specialized course for professionals in the field of Civil Aviation Security, in
+                        addition to the activities enabled by the Basic AVSEC course.</p>
+                    </div>
+                </div>
+
+                <div class="card3">
+                    <div class="front">
+                        <h3>AVSEC for Passenger Assistance</h3>
+                        <p>(click here)</p>
+                    </div>
+                    <div class="back">
+                        <p>The AVSEC Passenger Service Course aims to qualify professionals to provide comprehensive passenger service for Airline
+                        Operators in both commercial and executive aviation, with ANAC certification.</p>
+                    </div>
+                </div>
+            </div>
+            <a href="courses.html">Learn More</a>
+        </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="grid-footer">
+            <img src="images/panter-white.png" alt="Panter Aviation Logo" onclick=go_top() loading="lazy">
+
+            <div>
+                <a href="#">Begin</a>
+                <a href="courses.html">AVSEC Courses</a>
+                <a href="apply.html">Apply</a>
+            </div>
+
+            <div>
+                <img src="images/facebook.png" alt="Facebook" onclick=open_facebook() loading="lazy">
+                <img src="images/instagram.png" alt="Instagram" onclick=open_instagram() loading="lazy">
+            </div>
+        </div>
+        <p>samorimmaciel@byupathway.edu</p>
+        <p>©<span id="current-year"></span> SAMUEL MACIEL - BRAZIL</p>
+    </footer>
+</body>
+</html>
