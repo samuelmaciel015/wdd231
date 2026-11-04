@@ -81,7 +81,7 @@ main {
 
 section {
     background-color: #b5b3b3;
-    height: 300px;
+    padding-bottom: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -97,14 +97,8 @@ section p {
     text-align: justify;
 }
 
-.photo {
-    display: grid;
-    grid-template-columns: 20% auto 20%;
-    grid-template-rows: 27px;
-}
-
-.photo h2 {
-    grid-column: 1/4;
+.photo-image {
+    justify-self: center;
 }
 
 section img {
