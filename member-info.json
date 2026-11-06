@@ -1,0 +1,35 @@
+{
+    "family_name" : "Maciel",
+    "moved_date" : "2018-01-18",
+    "number_of_members" : 5,
+    "visited_by_bishopric" : true,
+    "members" : 
+    [
+        {
+            "name" : "Samuel",
+            "age" : 22,
+            "birthdate" : "2004-03-15"
+        },
+        {
+            "name" : "Rebeca Demy",
+            "age" : 20,
+            "birthdate" : "2005-05-31"
+        },
+        {
+            "name" : "Gabriela Lana",
+            "age" : 22,
+            "birthdate" : "2015-10-19"
+        },
+        {
+            "name" : "Leonardo Severo",
+            "age" : 44,
+            "birthdate" : "1981-12-01"
+        },
+        {
+            "name" : "Ana Claudia",
+            "age" : 50,
+            "birthdate" : "1975-09-18"
+        }
+    ]
+
+}
