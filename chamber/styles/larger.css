@@ -69,4 +69,15 @@
         flex-direction: row;
         justify-content: space-between;
     }
+
+    /************HOME*************/
+    .home-container {
+        grid-column: span 4;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 1rem;
+    }
+    .home-container section {
+        width: 96%;
+    }
 }
