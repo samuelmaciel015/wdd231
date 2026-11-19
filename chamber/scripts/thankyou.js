@@ -17,11 +17,17 @@ hamburguer.addEventListener('click', () => {
 });
 
 const myInfo = new URLSearchParams(window.location.search);
-console.log(myInfo);
 
+console.log(window.location.search);
+console.log(myInfo.get("timestamp"));
 
-document.querySelector('#results').innerHTML = `<h2>${myInfo.get('firstName')} ${myInfo.get('lastName')}</h2>
-<h3>From ${myInfo.get('orgTitle')}</h3>
-<p>E-mail: ${myInfo.get('email')}</p>
-<p>Phone Number: ${myInfo.get('phone')}</p>
-<p>Organization Description: ${myInfo.get('orgDesc')}</p>`;
+const results = document.querySelector("#results");
+
+results.innerHTML = `
+    <h2>${myInfo.get("firstName")} ${myInfo.get("lastName")}</h2>
+    <h3>From ${myInfo.get("orgTitle")}</h3>
+    <p>E-mail: ${myInfo.get("email")}</p>
+    <p>Phone Number: ${myInfo.get("phone")}</p>
+    <p>Organization Description: ${myInfo.get("orgDesc")}</p>
+    <p>Time: ${myInfo.get("timestamp")}</p>
+`;
